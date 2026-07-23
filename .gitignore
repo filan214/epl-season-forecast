@@ -1,0 +1,34 @@
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.local
+.env.*.local
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+
+# Training-data cache: kept on disk, never committed (IMPLEMENTATION_GUIDE.md §0).
+# data/processed parquet may be committed if small; data/raw never is.
+pipeline/data/raw/
+
+# Posterior traces are GitHub Actions artifacts, never committed.
+*.nc
+*.netcdf
+idata_*
+
+# --- Node / web (web/ also has its own .gitignore) ------------------------
+node_modules/
+.next/
+.vercel/
+
+# --- OS / editors ---------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

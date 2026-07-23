@@ -1,0 +1,17 @@
+# Monthly Neon heartbeat — IMPLEMENTATION_GUIDE.md §5.
+#
+# PLACEHOLDER (built in Phase 6). A belt-and-braces `SELECT 1` against Neon.
+# Not strictly required (Neon suspends compute, not the project), but the cost is
+# zero and this exact free-tier failure mode has cost a project before.
+#
+# Manual-trigger only for now.
+name: heartbeat
+
+on:
+  workflow_dispatch:
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "heartbeat is scaffolded but not yet implemented (IMPLEMENTATION_GUIDE.md §5, Phase 6)."
