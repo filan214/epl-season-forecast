@@ -14,8 +14,10 @@ build/
 dist/
 
 # Training-data cache: kept on disk, never committed (IMPLEMENTATION_GUIDE.md §0).
-# data/processed parquet may be committed if small; data/raw never is.
+# Both raw CSVs and the derived processed parquet are regenerable via the ingest
+# (DoH fallback handles the ISP block), so neither is committed.
 pipeline/data/raw/
+pipeline/data/processed/*.parquet
 
 # Posterior traces are GitHub Actions artifacts, never committed.
 *.nc
