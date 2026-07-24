@@ -25,4 +25,7 @@ SEASON = "2026-27"
 # --- Modelling defaults -----------------------------------------------------
 # Exponential time-decay half-life (days). Selected offline by out-of-sample RPS
 # in Phase 2 — never estimated inside the model (PRD §9, IMPLEMENTATION_GUIDE §10).
-DEFAULT_HALF_LIFE_DAYS = 180.0
+# Grid search over {60,90,120,180,270,365,inf} on seasons 2015-16..2024-25
+# (7 expanding-window held-out seasons): 365d won at pooled RPS 0.2082, a shallow
+# plateau with 270d (0.2092) and inf (0.2099) close behind. 2026-07-24.
+DEFAULT_HALF_LIFE_DAYS = 365.0
