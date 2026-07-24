@@ -8,6 +8,9 @@
 
 **Tech Stack:** Python 3.11+, xgboost 3.x (`XGBClassifier`), scikit-learn 1.9 (`CalibratedClassifierCV`), numpy, pandas. Reuses Phase 1 features/metrics/validation and Phase 2 `fit_bayes`/`predict_outcome_probs`.
 
+
+
+
 ## Global Constraints
 
 - Python `>=3.11` (running 3.13); no ORM on the Python side.
