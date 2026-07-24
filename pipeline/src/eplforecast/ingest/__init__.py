@@ -1,1 +1,1 @@
-"""Ingest — sources to parquet cache; every function caches before returning (IMPLEMENTATION_GUIDE.md §4.1)."""
+"""Ingest — sources to parquet cache; each function caches before returning (§4.1)."""

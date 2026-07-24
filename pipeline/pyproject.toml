@@ -56,3 +56,8 @@ select = ["E", "F", "I", "UP", "B", "SIM"]
 testpaths = ["tests"]
 addopts = "-ra"
 pythonpath = ["src"]  # import eplforecast without an editable install
+filterwarnings = [
+  # PyTensor's internal graph-optimizer notice when compiling large models
+  # without a C compiler (Python backend). Harmless and not actionable here.
+  "ignore:Loop fusion failed:UserWarning",
+]

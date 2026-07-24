@@ -1,1 +1,1 @@
-"""Team name reconciliation across all four sources, resolved through the teams table (§3, §4.1). TODO."""
+"""Team-name reconciliation across sources via the teams table (§4.1). TODO."""
